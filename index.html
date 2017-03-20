@@ -2,19 +2,23 @@
 <html>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
-  <body>
+  <link rel="stylesheet" href="app.css">
+  <body class="box">
 
-<h1>My Shopping List</h1>
+<div class="heading">
+    <h1 >My Shopping List</h1>
+</div>
 
-<div ng-app="myShoppingList" ng-controller="myCtrl">
+
+<div ng-app="myShoppingList" ng-controller="myCtrl" class="d2">
   <ul>
     <li ng-repeat="product in products">
       {{ product }}
       <span ng-click="removeitem($index)">&times;</span>
     </li>
   </ul>
-    <input ng-model="addme">
-    <button ng-click="additem()">Add</button>
+    <input ng-model="addme" class='inp'>
+    <button ng-click="additem()" class="but">Add</button>
   <p>{{ errortext }}</p>
 </div>
 

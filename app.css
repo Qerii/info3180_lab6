@@ -1,0 +1,27 @@
+.box{
+    border:  solid black 3px;
+    width: 20%;
+    
+
+}
+
+
+
+.heading{
+    border-bottom: solid black 3px;
+    border-top: solid black 1px;
+    background: grey;
+
+
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.inp{
+    padding: 4px;
+    margin-left: 4px;
+    background: grey;
+}
